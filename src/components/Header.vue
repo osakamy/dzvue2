@@ -22,12 +22,45 @@
     </section>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
     .header {
         background-color: black;
         padding: 16px 0px 16px 0px;
         align-items: center;
         margin: 0 auto;
+
+        &__logo {
+        display: flex;
+        gap: 65px;
+    }
+
+        &__email {
+            background-color: gray;
+            color: white;
+            border: 2px solid gray;
+            padding: 4px 8px;
+        }
+
+        &__info {
+            display: flex;
+            gap: 65px;
+        }
+
+        &__naviagtion {
+            display: flex;
+            color: white;
+            gap: 20px;
+            align-items: center;
+        }
+
+        &__btn {
+            color: black;
+            background: #FF7143;
+            border-color: #FF7143;
+            border-radius: 6px;
+            padding: 12px 32px;
+            font-weight: bold;
+        }
     }
 
     .hero__container {
@@ -37,38 +70,5 @@
         justify-content: space-between;
         align-items: center;
         gap: 272px;
-    }
-
-    .header__logo {
-        display: flex;
-        gap: 65px;
-    }
-
-    .header__email {
-        background-color: gray;
-        color: white;
-        border: 2px solid gray;
-        padding: 4px 8px;
-    }
-
-    .header__info {
-        display: flex;
-        gap: 65px;
-    }
-
-    .header__naviagtion {
-        display: flex;
-        color: white;
-        gap: 20px;
-        align-items: center;
-    }
-
-    .header__btn {
-        color: black;
-        background: #FF7143;
-        border-color: #FF7143;
-        border-radius: 6px;
-        padding: 12px 32px;
-        font-weight: bold;
     }
 </style>

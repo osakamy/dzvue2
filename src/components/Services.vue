@@ -32,34 +32,34 @@
 </section>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .services {
     padding: 85px 0px 85px 0px;
-}
 
-.secvices__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-.services__cards {
-    display: flex;
-}
+    &__cards {
+        display: flex;
+    }
 
-.services__card {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-}
+    &__card {
+        display: flex;
+        align-items: center;
+        gap: 24px;
 
-.services__card--info {
-    color: black;
-}
+        &--info {
+            color: black;
 
-.services__card--info__title {
-    font-weight: bold;
-    font-size: 24px;
-    padding-bottom: 13px;
+            &__title {
+                font-weight: bold;
+                font-size: 24px;
+                padding-bottom: 13px;
+            }
+        }
+    }
 }
 </style>

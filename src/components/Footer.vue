@@ -7,7 +7,7 @@
     <div class="container footer__container">
         <div class="footer__title">
             <img src="../assets/logo.svg" alt="">
-            <button class="footer__titel--btn">Get on Webflow</button>
+            <button class="footer__title--btn">Get on Webflow</button>
         </div>
         <div class="footer__social">
             <div class="footer__social--templates">
@@ -35,59 +35,59 @@
 </section>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .footer {
     background: black;
     padding-top: 64px;
-}
 
-.footer__title {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 64px;
-}
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 64px;
 
-.footer__titel--btn {
-    color: black;
-    background: white;
-    padding: 12px 32px;
-    border-radius: 6px;
-    border-color: white;
-    font-weight: 700;
-}
+        &--btn {
+            color: black;
+            background: white;
+            padding: 12px 32px;
+            border-radius: 6px;
+            border-color: white;
+            font-weight: 700;
+        }
+    }
 
-.footer__social {
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    align-items: center;
-    padding-bottom: 28px;
-}
+    &__social {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        align-items: center;
+        padding-bottom: 28px;
 
-.footer__social--templates {
-    display: flex;
-    gap: 16px;
-}
+        &--templates {
+            display: flex;
+            gap: 16px;
+        }
 
-.footer__social--img {
-    display: flex;
-    gap: 8px;
-}
+        &--img {
+            display: flex;
+            gap: 8px;
+        }
+    }
 
-.footer__contact {
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    border-top: 1px solid rgb(48, 48, 48);
-    padding-top: 29px;
-}
+    &__contact {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        border-top: 1px solid rgb(48, 48, 48);
+        padding-top: 29px;
 
-.footer__contact--list {
-    display: flex;
-    gap: 12px;
-}
+        &--list {
+            display: flex;
+            gap: 12px;
 
-.footer__contact--list__name {
-    color: #FF7143;
+            &__name {
+                color: #FF7143;
+            }
+        }
+    }
 }
 </style>
