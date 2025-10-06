@@ -3,7 +3,7 @@
 </script>
 
 <template>
-<section class="hero">
+<section class="hero" id="hero__section">
     <div class="container hero__container">
         <div class="main__info">
             <h1 class="main__info--title">Blanko template</h1>
@@ -62,6 +62,10 @@
             padding: 20px 32px;
             border-radius: 6px;
             border-color: black;
+
+            &:hover {
+                cursor: pointer;
+            }
         }
 
         &__white {
@@ -71,6 +75,10 @@
             padding: 20px 32px;
             border-radius: 6px;
             border-color: white;
+
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
 }

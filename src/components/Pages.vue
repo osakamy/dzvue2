@@ -31,7 +31,7 @@ import PagesCard from './PagesCard.vue';
 </script>
 
 <template>
-<section class="pages">
+<section class="pages" id="landing__section">
     <div class="container pages__container">
         <h3 class="pages__title">Landing pages</h3>
         <div class="pages__list">

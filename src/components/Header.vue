@@ -11,9 +11,9 @@
             </div>
             <div class="header__info">
                 <nav class="header__naviagtion">
-                    <p>Landing</p>
-                    <p>All pages</p>
-                    <p>Template</p>
+                    <a href="#landing__section" class="header__naviagtion--landing">Landing</a>
+                    <p class="header__naviagtion--all-pages">All pages</p>
+                    <a href="#hero__section" class="header__naviagtion--template">Template</a>
                 </nav>
                 <button class="header__btn">Purchase template</button>
             </div>
@@ -35,10 +35,16 @@
     }
 
         &__email {
-            background-color: gray;
+            background-color: rgb(39, 39, 39);
             color: white;
-            border: 2px solid gray;
+            border: 2px solid rgb(39, 39, 39);
             padding: 4px 8px;
+
+            &:hover {
+                color: #645b5b;
+                transition: 0.3s;
+                cursor: pointer;
+            }
         }
 
         &__info {
@@ -51,6 +57,29 @@
             color: white;
             gap: 20px;
             align-items: center;
+            
+            a {
+                color: white;
+                text-decoration: none;
+                
+                &:hover {
+                    color: #645b5b;
+                    transition: 0.3s;
+                    cursor: pointer;
+                }
+            }
+
+            &--all-pages:hover {
+                color: #645b5b;
+                transition: 0.3s;
+                cursor: pointer;
+            }
+
+            &--template:hover {
+                color: #645b5b;
+                transition: 0.3s;
+                cursor: pointer;
+            }
         }
 
         &__btn {
