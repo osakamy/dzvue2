@@ -13,7 +13,7 @@
                 <button class="main__info--btn__white">Other templates</button>
             </div>
         </div>
-        <img src="../assets/hero.svg" alt="">
+        <img class="hero__img" src="../assets/hero.svg" alt="">
     </div>
 </section>
 </template>
@@ -22,11 +22,23 @@
 .hero {
     background-color: #FF7143;
 
+    @media (max-width: 979px) {
+            padding: 80px 0;
+        }
+
+    @media (max-width: 767px) {
+        padding: 40px 0;
+    }
+
     &__container {
         display: flex;
         align-items: center;
         gap: 231px;
         justify-content: space-between;
+
+        @media (max-width: 1200px) {
+            justify-content: space-around;
+        }
     }
 }
 
@@ -37,10 +49,30 @@
     align-items: center;
     justify-content: center;
 
+    @media (max-width: 1200px) {
+            max-width: 34rem;
+    }
+
+    @media (max-width: 767px) {
+        max-width: 20rem;
+    }
+
     &--title {
         color: black;
         font-size: 72px;
         font-weight: bold;
+
+        @media (max-width: 1200px) {
+            font-size: 3.5rem;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 2.5rem;
+        }
+
+        @media (max-width: 479px) {
+            font-size: 1.5rem;
+        }
     }
 
     &--paragraph {
@@ -48,12 +80,35 @@
         padding: 27px 0px 22px 0px;
         font-size: 18px;
         line-height: 27px;
+
+        @media (max-width: 767px) {
+            max-width: 18rem;
+        }
+
+        @media (max-width: 479px) {
+            flex-direction: column;
+            max-width: 12rem;
+        }
     }
 
     &--btn {
         display: flex;
         gap: 6px;
         justify-content: center;
+
+        @media (max-width: 1200px) {
+            padding: 0.75rem 1.5rem;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 0.75rem;
+            line-height: 100%;
+            padding: 0.5rem 1rem;
+        }
+
+        @media (max-width: 479px) {
+            padding: 1rem;
+        }
 
         &__black {
             color: white;
@@ -80,6 +135,19 @@
                 cursor: pointer;
             }
         }
+    }
+}
+
+.hero__img {
+    max-width: 26rem;
+    width: 100%;
+
+    @media (max-width: 1200px) {
+        max-width: 15rem;
+    }
+
+    @media (max-width: 979px) {
+        display: none;
     }
 }
 </style>

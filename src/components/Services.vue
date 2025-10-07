@@ -1,65 +1,58 @@
 <script setup>
+    import { ref } from 'vue';
+    import OptionsCard from './ServicesCard.vue';
+    import cardSpeed from '../assets/speed.svg';
+    import cardDesign from '../assets/design.svg';
+    import cardModularity from '../assets/modularity.svg';
 
+    const cards = ref([
+        {
+            id: 1,
+            image: cardSpeed,
+            title: "Speed",
+            description: "Open a commercial-grade current account from anywhere",
+        },
+        {
+            id: 2,
+            image: cardDesign,
+            title: "Design",
+            description: "Open a commercial-grade current account from anywhere",
+        },
+        {
+            id: 3,
+            image: cardModularity,
+            title: "Modularity",
+            description: "Open a commercial-grade current account from anywhere",
+        },
+    ]);
 </script>
 
 <template>
-<section class="services">
-    <div class="container secvices__container">
-        <div class="services__cards">
-            <div class="services__card">
-                <img src="../assets/speed.svg" alt="">
-                <div class="services__card--info">
-                    <h3 class="services__card--info__title">Speed</h3>
-                    <p class="services__card--info__paragraph">Open a commercial-grade current account from anywhere</p>
-                </div>
-            </div>
-            <div class="services__card">
-                <img src="../assets/design.svg" alt="">
-                <div class="services__card--info">
-                    <h3 class="services__card--info__title">Design</h3>
-                    <p class="services__card--info__paragraph">Open a commercial-grade current account from anywhere</p>
-                </div>
-            </div>
-            <div class="services__card">
-                <img src="../assets/modularity.svg" alt="">
-                <div class="services__card--info">
-                    <h3 class="services__card--info__title">Modularity</h3>
-                    <p class="services__card--info__paragraph">Open a commercial-grade current account from anywhere</p>
-                </div>
+    <section class="services">
+        <div class="container">
+            <div class="services__cards">
+                <OptionsCard
+                    v-for="card in cards" :key="card.id"
+                    :image="card.image" :title="card.title" :description="card.description"
+                />
             </div>
         </div>
-    </div>
-</section>
+    </section>
 </template>
 
-<style scoped lang="scss">
-.services {
-    padding: 85px 0px 85px 0px;
+<style lang="scss" scoped>
+    .services {
+        padding: 5rem 0;
 
-    &__container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+        &__cards{
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
 
-    &__cards {
-        display: flex;
-    }
-
-    &__card {
-        display: flex;
-        align-items: center;
-        gap: 24px;
-
-        &--info {
-            color: black;
-
-            &__title {
-                font-weight: bold;
-                font-size: 24px;
-                padding-bottom: 13px;
+            @media (max-width: 979px) {
+                flex-direction: column;
+                align-items: center;
             }
         }
     }
-}
 </style>

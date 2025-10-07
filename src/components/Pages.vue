@@ -48,18 +48,35 @@ import PagesCard from './PagesCard.vue';
 .pages {
     padding: 100px;
 
+    @media (max-width: 767px) {
+        padding: 4rem;
+    }
+
     &__title {
         font-size: 40px;
         font-weight: 700;
         line-height: 120%;
         margin-bottom: 25px;
         color: black;
+
+        @media (max-width: 767px) {
+            text-align: center;
+            font-size: 1.5rem;   
+        }
     }
 
     &__list {
         display: flex;
         flex-wrap: wrap;
         gap: 17px;
+
+        @media (max-width: 1200px) {
+            grid-template-columns: repeat(2, auto);
+        }
+
+        @media (max-width: 767px) {
+            grid-template-columns: auto;
+        }
     }
 }
 </style>
