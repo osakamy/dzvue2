@@ -49,7 +49,7 @@ import PagesCard from './PagesCard.vue';
     padding: 100px;
 
     @media (max-width: 767px) {
-        padding: 4rem;
+        padding: 64px;
     }
 
     &__title {
@@ -61,7 +61,7 @@ import PagesCard from './PagesCard.vue';
 
         @media (max-width: 767px) {
             text-align: center;
-            font-size: 1.5rem;   
+            font-size: 24px;   
         }
     }
 

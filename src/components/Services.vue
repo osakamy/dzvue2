@@ -42,12 +42,12 @@
 
 <style lang="scss" scoped>
     .services {
-        padding: 5rem 0;
+        padding: 80px 0;
 
         &__cards{
             display: flex;
             justify-content: space-between;
-            gap: 1rem;
+            gap: 16px;
 
             @media (max-width: 979px) {
                 flex-direction: column;

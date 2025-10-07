@@ -18,7 +18,7 @@
 
 <style lang="scss" scoped>
     .card {
-        max-width: 26rem;
+        max-width: 416px;
         width: 100%;
         display: flex;
         gap: 24px;

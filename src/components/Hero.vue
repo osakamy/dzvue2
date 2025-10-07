@@ -50,11 +50,11 @@
     justify-content: center;
 
     @media (max-width: 1200px) {
-            max-width: 34rem;
+            max-width: 544px;
     }
 
     @media (max-width: 767px) {
-        max-width: 20rem;
+        max-width: 320px;
     }
 
     &--title {
@@ -63,15 +63,15 @@
         font-weight: bold;
 
         @media (max-width: 1200px) {
-            font-size: 3.5rem;
+            font-size: 56px;
         }
 
         @media (max-width: 767px) {
-            font-size: 2.5rem;
+            font-size: 40px;
         }
 
         @media (max-width: 479px) {
-            font-size: 1.5rem;
+            font-size: 24px;
         }
     }
 
@@ -82,12 +82,12 @@
         line-height: 27px;
 
         @media (max-width: 767px) {
-            max-width: 18rem;
+            max-width: 288px;
         }
 
         @media (max-width: 479px) {
             flex-direction: column;
-            max-width: 12rem;
+            max-width: 192px;
         }
     }
 
@@ -97,17 +97,17 @@
         justify-content: center;
 
         @media (max-width: 1200px) {
-            padding: 0.75rem 1.5rem;
+            padding: 12px 20px;
         }
 
         @media (max-width: 767px) {
-            font-size: 0.75rem;
+            font-size: 12px;
             line-height: 100%;
-            padding: 0.5rem 1rem;
+            padding: 8px 16px;
         }
 
         @media (max-width: 479px) {
-            padding: 1rem;
+            padding: 16px;
         }
 
         &__black {
@@ -139,11 +139,11 @@
 }
 
 .hero__img {
-    max-width: 26rem;
+    max-width: 416px;
     width: 100%;
 
     @media (max-width: 1200px) {
-        max-width: 15rem;
+        max-width: 240px;
     }
 
     @media (max-width: 979px) {
